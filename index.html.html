@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="kk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Қош келдің, менің дарынды оқушым!</title>
+<style>
+*{box-sizing:border-box}body{margin:0;padding:18px 13px 30px;background:#fff8e9;color:#49345e;font-family:Arial,sans-serif}main{max-width:800px;margin:auto}
+header{text-align:center;padding:12px 5px 20px}.rainbows{font-size:30px;letter-spacing:7px;margin-bottom:10px}h1{font-size:clamp(25px,5vw,39px);line-height:1.16;color:#7c3aed;margin:0 auto 12px}.subtitle{color:#8b6c56;line-height:1.5;margin:0 auto 12px}.special{color:#9b6b16;font-weight:bold}.divider{height:2px;background:#f2d5a3;margin-bottom:18px}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card{appearance:none;-webkit-appearance:none;width:100%;border:3px solid white;border-radius:20px;min-height:150px;padding:14px 10px;background:var(--bg);color:#49345e;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;text-align:center;font:inherit;cursor:pointer;box-shadow:0 4px 0 #6e508014;touch-action:manipulation}
+.card:focus-visible,#reset:focus-visible{outline:3px solid #7c3aed;outline-offset:3px}.c1{--bg:#bfe7ff}.c2{--bg:#ffd6e7}.c3{--bg:#d9f7cf}.c4{--bg:#e6d8ff}.c0{--bg:#ffe9af}
+.number{font-size:34px;font-weight:800;line-height:1}.gift{font-size:27px;line-height:1}.tap{font-size:14px;font-weight:bold}.card.open{background:var(--open-bg)}.emoji{font-size:29px;line-height:1}.message{font-weight:700;font-size:16px;line-height:1.35}.hint{font-size:11px;color:#806b91}
+.footer{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:18px}#progress{font-size:14px;font-weight:bold;color:#7754a6}#reset{border:2px solid #d9c8ed;background:transparent;color:#7754a6;border-radius:999px;padding:10px 15px;font-weight:bold;cursor:pointer;font-size:14px;touch-action:manipulation}
+.closing{background:white;border-radius:18px;padding:17px 12px;text-align:center;margin-top:18px}.closing h2{font-size:20px;color:#7c3aed;margin:0 0 7px}.closing p{font-size:13px;color:#806b91;margin:0;line-height:1.45}
+@media(min-width:620px){.cards{grid-template-columns:repeat(3,minmax(0,1fr))}.card{min-height:165px}}@media(max-width:360px){.cards{gap:8px}.card{min-height:138px;padding:11px 7px}.message{font-size:14px}}
+</style></head><body><main>
+<header><div class="rainbows">🌈 ⭐ 🌈</div><h1>Қош келдің, менің дарынды оқушым!</h1><p class="subtitle">Сиқырлы карточканы таңда да, өзіңе арналған жылы сөзді оқы!</p><div class="special">✨ Сен ерекше жансың! ✨</div></header>
+<div class="divider"></div><section class="cards" id="cards" aria-label="Мотивациялық карточкалар">
+<button class="card c1" type="button" data-n="1" data-emoji="🌟" data-msg="Сенің қолыңнан бәрі келеді!"><span class="number">1</span><span class="gift">🎁</span><span class="tap">Мені бас!</span></button>
+<button class="card c2" type="button" data-n="2" data-emoji="⭐" data-msg="Сен — ерекше әрі дарынды баласың!"><span class="number">2</span><span class="gift">🎁</span><span class="tap">Мені бас!</span></button>
+<button class="card c3" type="button" data-n="3" data-emoji="💫" data-msg="Өзіңе сен! Сен ойлағаннан да мықтысың!"><span class="number">3</span><span class="gift">🎁</span><span class="tap">Мені бас!</span></button>
+<button class="card c4" type="button" data-n="4" data-emoji="🦋" data-msg="Қателесуден қорықпа — әр қателік сені үйретеді!"><span class="number">4</span><span class="gift">🎁</span><span class="tap">Мені бас!</span></button>
+<button class="card c0" type="button" data-n="5" data-emoji="🚀" data-msg="Бүгін кешегіден де жақсы болуға тырыс!"><span class="number">5</span><span class="gift">🎁</span><span class="tap">Мені бас!</span></button>
+<button class="card c1" type="button" data-n="6" data-emoji="☀️" data-msg="Сенің күлкің — бүгінгі күннің шуағы!"><span class="number">6</span><span class="gift">🎁</span><span class="tap">Мені бас!</span></button>
+<button class="card c2" type="button" data-n="7" data-emoji="💖" data-msg="Арманда! Үйрен! Ізден! Биіктерді бағындыр!"><span class="number">7</span><span class="gift">🎁</span><span class="tap">Мені бас!</span></button>
+<button class="card c3" type="button" data-n="8" data-emoji="🌈" data-msg="Әрбір жаңа күн — жаңа мүмкіндіктерге толы!"><span class="number">8</span><span class="gift">🎁</span><span class="tap">Мені бас!</span></button>
+<button class="card c4" type="button" data-n="9" data-emoji="🏆" data-msg="Ең бастысы — берілме! Сен міндетті түрде жетістікке жетесің!"><span class="number">9</span><span class="gift">🎁</span><span class="tap">Мені бас!</span></button>
+<button class="card c0" type="button" data-n="10" data-emoji="🌷" data-msg="Сенің кішкентай қадамың — үлкен жеңістердің бастауы!"><span class="number">10</span><span class="gift">🎁</span><span class="tap">Мені бас!</span></button>
+</section><div class="footer"><div id="progress" aria-live="polite">Ашылғаны: 0/10</div><button id="reset" type="button">Қайта бастау</button></div>
+<section class="closing"><h2>💖 Сенің қолыңнан бәрі келеді!</h2><p>Әр оқушы — дарынды, әр талпыныс — жеңіс!</p></section></main>
+<script>
+(function(){
+var grid=document.getElementById('cards');
+var progress=document.getElementById('progress');
+function updateProgress(){progress.textContent='Ашылғаны: '+grid.querySelectorAll('.card.open').length+'/10';}
+grid.addEventListener('click',function(event){
+ var card=event.target.closest('button.card');
+ if(!card || !grid.contains(card)) return;
+ var isOpen=card.classList.contains('open');
+ if(isOpen){
+   card.classList.remove('open');
+   card.style.removeProperty('--open-bg');
+   card.innerHTML='<span class="number">'+card.dataset.n+'</span><span class="gift">🎁</span><span class="tap">Мені бас!</span>';
+   card.setAttribute('aria-expanded','false');
+ } else {
+   card.classList.add('open');
+   var palette=['#fde8f1','#e5f4ff','#e8f8e8','#f1e8ff','#fff0d8'];
+   card.style.setProperty('--open-bg',palette[Number(card.dataset.n)%5]);
+   var emoji=document.createElement('span');emoji.className='emoji';emoji.textContent=card.dataset.emoji;
+   var message=document.createElement('span');message.className='message';message.textContent=card.dataset.msg;
+   var hint=document.createElement('span');hint.className='hint';hint.textContent='Қайта бассаң — жабылады';
+   card.replaceChildren(emoji,message,hint);
+   card.setAttribute('aria-expanded','true');
+ }
+ updateProgress();
+});
+document.getElementById('reset').addEventListener('click',function(){
+ grid.querySelectorAll('.card').forEach(function(card){
+   card.classList.remove('open');card.style.removeProperty('--open-bg');
+   card.innerHTML='<span class="number">'+card.dataset.n+'</span><span class="gift">🎁</span><span class="tap">Мені бас!</span>';
+   card.setAttribute('aria-expanded','false');
+ });
+ updateProgress();
+});
+})();
+</script></body></html>
